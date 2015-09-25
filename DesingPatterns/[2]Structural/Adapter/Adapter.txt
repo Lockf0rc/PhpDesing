@@ -1,0 +1,6 @@
+What is the adapter pattern?
+when to use it.
+examples
+1)
+2)
+3)

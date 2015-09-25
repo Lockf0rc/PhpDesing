@@ -1,0 +1,46 @@
+<?php
+/*FileName:Cell7.php*/
+class Cell7 implements IMatrix{
+const Char= "[7]";
+private $context;
+public function __construct(Context $now){
+$this->context=$now;
+}
+/*(Absolute Ref)
+[1][2][3]
+[4][5][6]
+[7][8][9]
+*/
+public function getChar(){return $this->Char;}
+public function Up(){
+  $this->context->setContext($this->context->getc4());
+  $this->context->setc7($this->context->getc8());
+  $this->context->setc4($this->context->getc7());
+  $this->context->setc1($this->context->getc4());
+  $this->context->setc2($this->context->getc1());
+  $this->context->setc5($this->context->getc2());
+  $this->context->setc8($this->context->getc5());
+  $this->context->Mash();
+}
+public function Down(){
+  $this->context->setContext($this->context->getc8());
+  $this->context->setc7($this->context->getc4());
+  $this->context->setc4($this->context->getc1());
+  $this->context->setc1($this->context->getc2());
+  $this->context->setc2($this->context->getc5());
+  $this->context->setc5($this->context->get8());
+  $this->context->setc8($this->context->getc7());
+  $this->context->Mash();
+}
+public function Left(){
+ // $this->context->setContext($this->context->getc9);
+    $this->context->Mash();
+}
+public function Right(){}
+ $this->context->setContext($this->context->getc8());
+ $this->context->setc7($this->context->getc9());
+ $this->context->setc8($this->context->getc7());
+ $this->context->setc9($this->context->getc8());
+ $this->context->Mash();
+}
+?>

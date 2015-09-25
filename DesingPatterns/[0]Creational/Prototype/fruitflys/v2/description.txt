@@ -1,0 +1,1 @@
+The prototype pattern should be used in any application where your project requires that you create seberal instances of a prototypical object.
