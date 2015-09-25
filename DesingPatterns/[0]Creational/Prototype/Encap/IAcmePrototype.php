@@ -17,7 +17,7 @@ abstract class IAcmePrototype
     protected $dept;
     //abstract methods to implement in extended classes
     abstract function setDept($orgCode);
-    public function getDept(){return $this->dept;}
+    abstract  function getDept();
     abstract function __clone();
 
     //Name concreate methods
