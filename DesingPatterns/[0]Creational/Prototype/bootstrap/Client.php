@@ -7,7 +7,7 @@
  */
 
 namespace bootstrap;
-include '../bootstrap1.html';
+
 include_once 'panel.php';
 include_once 'alert.php';
 include_once 'jumbotron.php';
@@ -19,7 +19,7 @@ include_once 'thumbnails.php';
 include_once 'Image.php';
 include_once 'Button.php';
 ?>
-    <div class="container">
+
 <?php
 #breadcrumbs
 class Client{
