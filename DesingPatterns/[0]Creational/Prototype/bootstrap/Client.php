@@ -27,7 +27,7 @@ class Client{
     {
         $bread=new breadcrumbs();
         $bread->_dir("TESTING");
-        $bread->_list("HOME","http://www.scriptreference/Home/");
+        $bread->_list("HOME","http://www.scriptreference.com/Home/");
         $bread->_list("WEBLINKS","http://www.scriptreference.com/Document/");
         
 #panel
