@@ -21,7 +21,6 @@ class modal extends IPrototype
         $this->title=$title;
         $this->content=$content;
         $this->html='<div class="container">
-    <h2>Basic Modal Example</h2>
     <!-- Trigger the modal with a button -->
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#%s">%s</button>
 
