@@ -26,9 +26,10 @@ class Client{
     public function __construct()
     {
         $bread=new breadcrumbs();
-        $bread->_dir("HOME");
-        $bread->_list("PHP","PRODUCTS");
-        $bread->_list("ABOUT US");
+        $bread->_dir("TESTING");
+        $bread->_list("HOME","http://www.scriptreference/Home/");
+        $bread->_list("WEBLINKS","http://www.scriptreference.com/Document/");
+        
 #panel
         $div=new panel();
         $div->_class("panel-danger");
